@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Latihan Tabel</title>
+    <style>
+        /* CSS langsung di dalam HTML */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            background-image: url('background.png'); 
+            background-size: cover; 
+            background-position: center; 
+            background-repeat: no-repeat; 
+        }
+        .container {
+            width: 80%;
+            max-width: 700px;
+            text-align: center;
+        }
+        h1 {
+            margin-bottom: 10px;
+            color: #111111;
+        }
+        p.description {
+            margin-bottom: 20px;
+            font-size: 16px;
+            color: #555;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+        thead {
+            background-color: #e8ee8ef6;
+            color: rgb(10, 9, 9);
+        }
+        th, td {
+            padding: 12px;
+            border: 1px solid #0f0e0e;
+            text-align: center;
+        }
+        tbody tr:nth-child(even) {
+            background-color: #f9f9f9;
+        }
+        tbody tr:hover {
+            background-color: #f1f1f1;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Lomba Film Pendek di Universitas Teknologi Bandung tahun 2024</h1>
+        <p class="description">
+            Di bawah ini merupakan data para pemenang yang memenangkan lomba film pendek 2024 dari juara 1-4. Selamat kepada para pemenang.
+        </p>
+        <table>
+            <thead>
+                <tr>
+                    <th>Juara</th>
+                    <th>Nama</th>
+                    <th>NIM</th>
+                    <th>Jurusan</th>
+                    <th>Judul Film</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1</td>
+                    <td>Nenda Maulin Kurniati</td>
+                    <td>22552011075</td>
+                    <td>Teknik Informatika</td>
+                    <td>“Langkah di Ujung Jalan”</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>Rizki Hafiz</td>
+                    <td>21262011407</td>
+                    <td>Teknik Industri</td>
+                    <td>“Cahaya Dalam Kegelapan”</td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>Dewi Susanti</td>
+                    <td>23612091063</td>
+                    <td>Bisnis Digital</td>
+                    <td>“Suara Kota”</td>
+                </tr>
+                <tr>
+                    <td>4</td>
+                    <td>Sinta Oktavia</td>
+                    <td>22902411004</td>
+                    <td>Desain Komunikasi Visual</td>
+                    <td>“Warna dalam Diam”</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</body>
+</html>
